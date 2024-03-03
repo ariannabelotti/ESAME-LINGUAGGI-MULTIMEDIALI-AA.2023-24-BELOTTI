@@ -1,0 +1,166 @@
+body {
+	font-family: "Montserrat", sans-serif;
+	background-image: url(./img/sfondohomepage.png);
+	background-size: cover;
+}
+
+h1 {
+	color: #B38DC0;
+	font-weight: 800;
+	font-size: 50px;
+}
+
+a {
+	text-decoration: none;
+}
+
+#logo {
+	width:20%;
+	margin-top: 25vh;
+	margin-bottom: 2vh;
+}
+
+.logotext {
+ margin-left: 5vh;
+}
+
+#boxlogo {
+	margin-bottom: 30vh;
+}
+
+.card {
+	margin-top: 8vh;
+	margin-bottom: 5vh;
+	margin-left: 2vh;
+	margin-right: 2vh;
+}
+
+.text {
+	color: #333333;
+	font-weight: 500;
+	margin-left: 5vh;
+}
+.card-name {
+	color:#B38DC0;
+	font-weight: 700;
+	font-size: 20pt;
+}
+
+.card-title {
+	color:#333333;
+	font-weight: 600;
+	font-size: 15pt;
+	font-style: oblique;
+}
+
+/* animazione bottone */
+
+#button {
+	background: #B38DC0;
+	transition: all 0.3s;
+	border-radius: 8px;
+	border-color: #B38DC0;
+	width: 200px;
+	margin-bottom: 15vh;
+	margin-top: 10vh;
+	font-weight: 700;
+}
+
+#button:hover {
+	border-color: #333333;
+	background-color: #333333;
+	transform: scale(1.1)
+}
+
+ /* pagina contatti */
+
+.testicontact {
+	display: flex;
+	align-items: center;
+	height: 100vh;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+	line-height: 25px;
+	font-weight: 500;
+}
+
+.iconesocial {
+	margin-top: 20px;
+}
+
+.back {
+	position: fixed;
+	bottom: 1px;
+}
+
+.sfondocontatti {
+	background-image: url(./img/sfondolavori.jpg);
+}
+
+/* animazione dei bottoni */
+
+a img {
+	transition: all 0.3s;
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+
+a:hover img {
+	transform: scale(1.4);
+}
+
+/* javascript */
+
+.accordion {
+	display: flex;
+	max-width: 22vw;
+	margin: 0 auto;
+	padding-bottom: 10px;
+	font-size: 10px;
+	font-weight: 600;
+}
+
+.accordion-item h2 {
+	padding-left: 20px;
+	padding-top: 10px;
+	cursor: pointer;
+	position: relative;
+	height: 35px;
+	font-size: 20px;
+	font-weight: 800;
+	color: #B38DC0;
+}
+
+.accordion-item h2::before {
+	content: "+";
+	position: absolute;
+	right: 5px;
+	padding-right: 20px;
+}
+
+.accordion-item.active h2::before {
+	content: "-";
+}
+
+.accordion-content {
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.4s ease-out;
+	padding: 0 1em;
+}
+
+.accordion-content p {
+	padding: 1em 0;
+	margin: 0;
+}
+
+.accordion-content.active {
+	max-height: auto;
+}
+
+@media (max-width: 767px) {
+	.accordion {
+		max-width: 80%;
+	}
+}
